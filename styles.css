@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111; /* чорний фон */
+  color: #eee;
+}
+
+/* Шапка */
+header {
+  background: #2c1b12; /* темно-коричневий */
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #d4a373; /* золото/світлий коричневий */
+  font-size: 26px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #d4a373;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Герой секція */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: url('https://images.unsplash.com/photo-1598514982651-0790d6a430f5?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+.hero p {
+  font-size: 22px;
+  margin: 10px 0 30px;
+}
+
+.hero button {
+  padding: 14px 28px;
+  font-size: 20px;
+  background: #d4a373;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero button:hover {
+  background: #fff;
+}

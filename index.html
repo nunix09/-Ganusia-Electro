@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganusia Electro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #ffffff;
+      color: #001f3f;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .product {
+      background: #f8f9ff;
+      border: 1px solid #cdd6f0;
+      border-radius: 10px;
+      width: 250px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 64, 0.1);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 0.5rem 0;
+      color: #001f3f;
+    }
+
+    .product p {
+      margin: 0.3rem 0;
+      color: #003366;
+    }
+
+    .product button {
+      background-color: #001f3f;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #0047ab;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 2rem auto;
+      background: #f0f4ff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 64, 0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.7rem;
+      border: 1px solid #b3c0e6;
+      border-radius: 5px;
+    }
+
+    form button {
+      width: 100%;
+      background-color: #001f3f;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #001f3f;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ganusia Electro</h1>
+    <p>Сучасна техніка за розумною ціною ⚡</p>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="foto/Apple iPhone 13 128GB Blue (MLPK3) .jpg" alt="iPhone 13 128GB Blue ">
+      <h3>iPhone 13 128GB Blue </h3>
+      <p>Ціна: 18 999 грн</p>
+      <button onclick="selectProduct('iPhone 13 128GB Blue ')">Замовити</button>
+    </div>
+
+    <div class="product">
+      <img src="foto/iphone 17 pro max cosmic orange_pdp_image_position_1__ce-ww.webp" alt="iphone 17 pro max cosmic orange">
+      <h3>iphone 17 pro max cosmic orange</h3>
+      <p>Ціна: 70 500 грн</p>
+      <button onclick="selectProduct('iphone 17 pro max cosmic orange')">Замовити</button>
+    </div>
+
+    <div class="product">
+      <img src="foto/Apple iPhone 16 128GB Pink.jng" alt="Apple iPhone 16 128GB Pink">
+      <h3>iApple iPhone 16 128GB Pink</h3>
+      <p>Ціна: 50 500 грн</p>
+      <button onclick="selectProduct('Apple iPhone 16 128GB Pink')">Замовити</button>
+    </div>
+
+
+
+    <div class="product">
+      <img src="foto/ Смартфон Apple iPhone 11 128GB White (slim box) .jpg" alt="Apple iPhone 11 128GB White">
+      <h3>Apple iPhone 11 128GB White</h3>
+      <p>Ціна: 10 500 грн</p>
+      <button onclick="selectProduct('Apple iPhone 11 128GB White')">Замовити</button>
+    </div>
+
+
+    <div class="product">
+      <img src="foto/Планшет Lenovo Tab M11 8 128 WiFi Seafoam Green  Pen (ZADA0329UA).jpg" alt="Lenovo Tab M11">
+      <h3>Lenovo Tab P11</h3>
+      <p>Ціна: 14 500 грн</p>
+      <button onclick="selectProduct('Lenovo Tab M11')">Замовити</button>
+    </div>
+
+    <div class="product">
+      <img src="foto/Ігрова приставка SONY PlayStation 5 (PS5) Slim Blu-ray (1000049734).jpg" alt="PlayStation 5">
+      <h3>PlayStation 5</h3>
+      <p>Ціна: 27 000 грн</p>
+      <button onclick="selectProduct('PlayStation 5')">Замовити</button>
+    </div>
+
+    <div class="product">
+      <img src="foto/Консоль Valve Steam Deck OLED 1TB Black.webp" alt="Steam Deck">
+      <h3>Steam Deck</h3>
+      <p>Ціна: 24 999 грн</p>
+      <button onclick="selectProduct('Steam Deck')">Замовити</button>
+    </div>
+
+    <div class="product">
+      <img src="foto/Ноутбук Apple MacBook Air 13 A2179 2020 13 Retina i5-1030NG7 8GB SSD 512GB.webp" alt="Apple MacBook Air 13">
+      <h3>Apple MacBook Air 13</h3>
+      <p>Ціна: 39 500 грн</p>
+      <button onclick="selectProduct('Apple MacBook Air 13')">Замовити</button>
+    </div>
+  </section>
+
+  <form id="telegramForm">
+    <h2>Залишити замовлення</h2>
+    <input type="text" id="name" placeholder="Ваше ім'я" required>
+    <input type="tel" id="phone" placeholder="Ваш телефон" required>
+    <input type="text" id="product" placeholder="Назва товару" readonly>
+    <textarea id="comment" placeholder="Коментар (необов'язково)"></textarea>
+    <button type="submit">Відправити</button>
+  </form>
+
+  <footer>
+    <p>© 2025 Ganusia Electro — Всі права захищені</p>
+  </footer>
+
+  <script>
+    // Функція вибору товару
+    function selectProduct(productName) {
+      document.getElementById('product').value = productName;
+      window.scrollTo({ top: document.getElementById('telegramForm').offsetTop, behavior: 'smooth' });
+    }
+
+    // --- ВСТАВ СВІЙ ТОКЕН ---
+    const BOT_TOKEN = "8430292004:AAHM8LiAgGhiW12XDTkjc4QQcZYlmNUavfw"; 
+    const CHAT_ID = "1098913497"; 
+    const URL_API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+    // --- Відправка повідомлення ---
+    document.getElementById("telegramForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const product = document.getElementById("product").value;
+      const comment = document.getElementById("comment").value;
+
+      const message = `
+🛒 <b>Нове замовлення!</b>
+👤 Ім'я: ${name}
+📞 Телефон: ${phone}
+📦 Товар: ${product}
+💬 Коментар: ${comment}
+      `;
+
+      fetch(URL_API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: message,
+          parse_mode: "HTML"
+        })
+      })
+      .then(response => {
+        if (response.ok) {
+          alert("✅ Замовлення відправлено!");
+          document.getElementById("telegramForm").reset();
+        } else {
+          alert("❌ Помилка при відправленні!");
+        }
+      })
+      .catch(error => alert("⚠️ Помилка мережі: " + error));
+    });
+  </script>
+</body>
+</html>
